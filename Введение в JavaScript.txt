@@ -1,0 +1,48 @@
+1.
+let admin, name;
+name = "Джон";
+admin = name;
+alert(admin);
+
+2.
+let a = prompt("Первое число?", 1);
+let b = prompt("Второе число?", 2);
+
+a = parseInt(a);
+b = parseInt(b);
+
+alert(a + b);
+
+3.
+for (let i = 2; i <= 10; i += 2) 
+{
+  console.log(i);
+}
+
+4.
+let i = 0;
+while (i < 3)
+ {
+  alert(`number ${i}!`);
+  i++;
+}
+
+5.
+let number;
+
+do {
+  number = prompt("Введите число, большее 100", "");
+} while (number <= 100 && number !== null);
+
+
+6.
+let n = 10;
+
+nextPrime:
+for (let i = 2; i <= n; i++) {
+  for (let j = 2; j < i; j++) {
+    if (i % j === 0) continue nextPrime;
+  }
+  console.log(i);
+}
+
